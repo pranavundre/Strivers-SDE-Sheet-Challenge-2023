@@ -7,8 +7,8 @@ public:
             int mid = (l+r)>>1;
             int mr = mid/n, mc = mid%n;
             if(matrix[mr][mc] == target) return true;
-            if(matrix[mr][mc] < target) l = mid+1;
-            else r = mid-1;
+            if(matrix[mr][mc] < target) l = mid + 1;
+            else r = mid - 1;
         }
         return false;
     }
